@@ -33,8 +33,8 @@ int main() {
 		// Update particles
 
 		// Draw particles
-		for (int y = 0; y < sdlbasic::Screen::WINDOW_HEIGHT; ++y) {
-			for (int x = 0; x < sdlbasic::Screen::WINDOW_WIDTH; ++x) {
+		for (int y = 0; y < sdlbasic::Screen::SCREEN_HEIGHT; ++y) {
+			for (int x = 0; x < sdlbasic::Screen::SCREEN_WIDTH; ++x) {
 				screen.setPixel(x, y, 128, 0, 255);
 			}
 		}
