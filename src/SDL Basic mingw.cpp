@@ -52,7 +52,7 @@ int main() {
 			sdlbasic::Particle particle = pParticles[i];
 
 			int x = (particle.m_x + 1) * sdlbasic::Screen::SCREEN_WIDTH / 2;
-			int y = (particle.m_y + 1) * sdlbasic::Screen::SCREEN_HEIGHT / 2;
+			int y = particle.m_y * sdlbasic::Screen::SCREEN_WIDTH / 2 + sdlbasic::Screen::SCREEN_HEIGHT / 2;
 
 			screen.setPixel(x, y, red, green, blue);
 		}
