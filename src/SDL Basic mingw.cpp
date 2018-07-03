@@ -40,13 +40,14 @@ int main() {
 	while (true) {
 		// Update particles
 
-		const sdlbasic::Particle * const pParticles = swarm.getParticles();
+		swarm.update();
 
 		int elapsed = SDL_GetTicks();
 		unsigned int red = static_cast<unsigned char>((1 + sin(elapsed * 0.0003)) * 128);
 		unsigned int green = static_cast<unsigned char>((1 + sin(elapsed * 0.0005)) * 128);
 		unsigned int blue = static_cast<unsigned char>((1 + cos(elapsed * 0.0007)) * 128);
 
+		const sdlbasic::Particle * const pParticles = swarm.getParticles();
 		for (int i = 0; i < sdlbasic::Swarm::NPARTICLES; ++i) {
 			sdlbasic::Particle particle = pParticles[i];
 
