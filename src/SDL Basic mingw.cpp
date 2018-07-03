@@ -39,7 +39,7 @@ int main() {
 
 	while (true) {
 		// Update particles
-
+		screen.clear();
 		swarm.update();
 
 		int elapsed = SDL_GetTicks();
