@@ -38,6 +38,9 @@ void Particle::update(int interval) {
 		init();
 	}
 
+	if (rand() < RAND_MAX / 100) {
+		init();
+	}
 }
 
 } /* namespace sdlbasic */
