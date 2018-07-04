@@ -78,6 +78,11 @@ void Screen::clear() {
 	memset(m_buffer, 0x00, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 }
 
+void Screen::boxBlur() {
+
+}
+
+
 void Screen::close() {
 	delete[] m_buffer;
 	SDL_DestroyTexture(m_texture);

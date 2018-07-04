@@ -32,6 +32,7 @@ public:
 	bool processEvents();
 	void clear();
 	void close();
+	void boxBlur();
 };
 
 } /* namespace sdlbasic */

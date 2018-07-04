@@ -39,7 +39,7 @@ int main() {
 
 	while (true) {
 		// Update particles
-		screen.clear();
+		// screen.clear();
 
 		int elapsed = SDL_GetTicks();
 
@@ -59,7 +59,7 @@ int main() {
 			screen.setPixel(x, y, red, green, blue);
 		}
 
-
+		screen.boxBlur();
 
 		// Draw the screen
 		screen.update();
